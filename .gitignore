@@ -1,0 +1,95 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+Pipfile
+Pipfile.lock
+
+# Django secret key file (if stored separately)
+.env
+*.env.*
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database files
+*.sqlite3
+db.sqlite3
+*.db
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+log_*.txt
+
+# Django migration files (optional, but usually should be tracked)
+**/migrations/*.pyc
+**/migrations/*.pyo
+**/migrations/__pycache__/
+
+# Media and static files
+/media/
+staticfiles/
+static/
+
+# Local settings
+local_settings.py
+settings_local.py
+
+# VSCode and PyCharm settings
+.vscode/
+.idea/
+*.iml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+coverage.xml
+nosetests.xml
+coverage/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# Docker-related files
+docker-compose.override.yml
+*.dockerfile
+
+# Node.js dependencies (if using npm for frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Security reports
+safety-report.json
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
