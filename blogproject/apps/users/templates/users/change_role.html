@@ -1,0 +1,14 @@
+{% extends "users/base.html" %}
+{% block content %}
+<h2>Change Role for {{ user.username }}</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="role">Select Role:</label>
+    <select name="role" id="role">
+        <option value="reader" {% if user.role == "reader" %}selected{% endif %}>Reader</option>
+        <option value="author" {% if user.role == "author" %}selected{% endif %}>Author</option>
+        <option value="admin" {% if user.role == "admin" %}selected{% endif %}>Admin</option>
+    </select>
+    <button type="submit">Update Role</button>
+</form>
+{% endblock %}

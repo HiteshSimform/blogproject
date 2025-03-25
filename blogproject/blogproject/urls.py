@@ -19,8 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('apps.blog.urls')),
+    # path('',include('apps.blog.urls')),
     path('users/',include('apps.users.urls')),
-    path('comments/',include('apps.comments.urls')),
-    path('dashnoard/',include('apps.dashboard.urls')),
+    # path('comments/',include('apps.comments.urls')),
+    # path('dashnoard/',include('apps.dashboard.urls')),
 ]
