@@ -19,8 +19,14 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',include('apps.blog.urls')),
+    path('',include('apps.blog.urls')),
     path('users/',include('apps.users.urls')),
     # path('comments/',include('apps.comments.urls')),
     # path('dashnoard/',include('apps.dashboard.urls')),
 ]
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

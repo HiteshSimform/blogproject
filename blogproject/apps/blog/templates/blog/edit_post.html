@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Edit Blog Post</h2>
+    
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+        {% comment %} <!-- Show the existing image -->
+        {% if form.instance.image %}
+            <div class="mt-3">
+                <label>Current Image:</label><br>
+                <img src="{{ form.instance.image.url }}" alt="Blog Image" class="img-thumbnail" width="200">
+            </div>
+        {% endif %} {% endcomment %}
+
+        <button type="submit" class="btn btn-success mt-3">Update Post</button>
+        <a href="{% url 'blog_list' %}" class="btn btn-secondary mt-3">Cancel</a>
+    </form>
+</div>
+{% endblock %}

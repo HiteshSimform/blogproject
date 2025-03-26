@@ -30,7 +30,7 @@ def login_user(request):
         if user is not None:
             login(request,user)
             messages.success(request, "Login Successful")
-            return redirect(reverse('home'))
+            return redirect(reverse('blog_list'))
         else:
             messages.error(request, "Incorrect username or password")
     form = LoginUser()

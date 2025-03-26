@@ -1,0 +1,30 @@
+Requirements of Blog Post :
+
+slug
+kwargs
+Queryset
+List
+404 Error
+
+Http404 exception error
+
+user banned
+template tag
+
+
+Mail
+Cookie
+Session
+
+by default url consider slug
+
+generate slub with hash
+
+
+object level
+
+elastic search in django
+backend search
+
+pagination : backend
+search : fromtend
